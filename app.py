@@ -112,9 +112,9 @@ def handle_message(event):
                     "content": user_msg
                 }
             ]
-        )
-        ai_text = completion.choices[0].message.content
-        bot_msg = TextMessage(text=ai_text)
+            )
+            ai_text = completion.choices[0].message.content
+            bot_msg = TextMessage(text=ai_text)
 
 
         line_bot_api.reply_message_with_http_info(
